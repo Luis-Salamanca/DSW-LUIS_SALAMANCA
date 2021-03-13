@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2  / Luis Salamanca</title>
+</head>            
+<body>
+    <H1 align="center"><B>Flex Box y CSS Grid</B></H1>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="#inicio"> Inicio </a> 
+            </li>
+            <br>
+            <li><b>Temas:</b>  
+                  </li>
+                <ul>
+                    <li>
+                        <a  href = "#tema1" > Tema 1 </a>
+                    </li>
+                    <li>
+                        <a  href = "#tema2" > Tema 2 </a>
+                    </li>
+                </ul>
+                <br>
+                <li> <b>Recursos Digitales:</b>
+                    <ul>
+                        <li>
+                            <a href="#paginaweb"> Recurso 1 </a>
+                        </li>
+                        <li>
+                            <a href="#direccionurl"> Recurso 2 </a>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li> <b>Aprendizaje:</b>
+                    <ul>
+                        <li>
+                            <a href=""> Actividad 1 </a>
+                        </li>
+                        <li>
+                            <a href=""> Actividad 2 </a>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                     <a href="#datos">Acerca del  Autor</a>
+                </li>
+    </nav>
+    <br>
+    <hr size="3px" color="black"/>
+    <br>
+
+<section>
+    <h2 id=inicio >Flex Box y CSS Grid</h2>
+    <p>A raíz de la pandemia del COVID-19 la educación virtual ha venido a
+        suplir la necesidad de la presencialidad, siendo usado por todas las
+        instituciones educativas, esto ha traído como resultado la necesidad de
+        elaborar recursos educativos digitales para dinamizar las estrategias de
+        aprendizaje. Una estrategia la constituyen los Objetos virtuales de
+        aprendizaje. Estos recursos son desarrollados por empresas que
+        diseñan contenidos multimediales e interactivos, basados en HTML5,
+        CSS3 entre otras tecnologías.</p>
+        <p>El presente sitio web tiene Como objetivo principal de 
+        fomentar los objetos virtuales de aprendizaje frente a tématicas como <b>Flex Box y CSS Grid.</b></p>
+
+</section>
+<article>
+    <br>
+    <h3 id=tema1 ><li>Flex Box:</li> </h3>
+    <p>
+        El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout,
+         y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
+    </p>
+    <h3> Los dos ejes de flexbox:</h3>
+    <p>
+        Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes: 
+         <b>el eje principal y el eje cruzado.  </b>  
+        </p>
+        <p>El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes,
+            por lo que vale la pena entender cómo trabajan desde el principio.
+        </p>
+        
+        <h4>Eje principal: </h4>
+        <p>El eje principal está definido por flex-direction, que posee cuatro posibles valores </p>
+        
+        <li>row</li>
+        <li>row-reverse</li>
+        <li>column</li>
+        <li>column-reverse</li>
+        <p>Si elegimos <b>row</b> o <b>row-reverse</b>, el eje principal correrá a lo largo de la fila según la dirección de la línea.</p>
+        <p>Al elegir <b>column</b> o <b>column-reverse</b> el eje principal correrá desde el borde superior de la página hasta el final según la dirección del bloque.</p>
+
+        <h4>Eje cruzado: </h4>
+        <p>Va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal)
+             es row o row-reverse el eje cruzado irá por las columnas.
+             Si el eje principal es column o column-reverse entonces el eje cruzado corre a lo largo de las filas.</p>
+             <br>
+          
+             <h3 id=tema2 ><li>CSS Grid:</li> </h3>
+             <p>CSS Grid Layout (también conocido como " <b>Grid</b>"), es un sistema de diseño bidimensional basado en cuadrículas que tiene como objetivo nada menos que cambiar completamente la forma en que diseñamos interfaces de usuario basadas en cuadrículas.
+                CSS siempre se ha utilizado para diseñar nuestras páginas web, pero nunca se ha hecho un buen trabajo. 
+                Primero, usamos tablas, luego flotantes, posicionamiento y bloque en línea, pero todos estos métodos fueron esencialmente trucos y dejaron fuera una gran cantidad de funciones importantes (centrado vertical, por ejemplo). 
+                Flexbox ayudó, pero está diseñado para diseños unidimensionales más simples, no complejos bidimensionales (Flexbox y Grid funcionan muy bien juntos). Grid es el primer módulo CSS creado específicamente para resolver 
+                los problemas de diseño que todos hemos estado pirateando durante el tiempo que llevamos creando sitios web.</p>
+             <p>Para comenzar, debe definir un elemento contenedor como una cuadrícula con display: grid, establecer los tamaños de columna y fila con grid-template-columnsy grid-template-rows, y luego colocar sus elementos secundarios en la cuadrícula con 
+                 grid-columny grid-row. De manera similar a flexbox, el orden de origen de los elementos de la cuadrícula no importa. Su CSS puede colocarlos en cualquier orden, lo que hace que sea muy fácil reorganizar su cuadrícula con consultas de medios.
+                  Imagínese definir el diseño de toda su página y luego reorganizarlo por completo para adaptarse a un ancho de pantalla diferente,
+                  todo con solo un par de líneas de CSS. Grid es uno de los módulos CSS más poderosos jamás introducido.</p>
+             <p>Algunos  conceptos  importantes  para tener en cuenta  son:</p>
+             <h4>Lineas:</h4>
+             <p>Son las divisiones que permiten acotar las celdas.
+                  Tenemos tanto líneas horizontales que dividen las filas como líneas verticales que dividen las columnas.
+
+               <br>   En una rejilla, todas las líneas están numeradas o mejor dicho, tienen un número que comienza en la línea más exterior de la rejilla.
+                Obviamente la primera línea será la 1 y aumentarán de izquierda a derecha y de arriba a abajo. 
+                <br>
+               Las líneas son muy importantes, porque serán las que nos permitan definir la posición de los contenidos (elementos del HTML) dentro de la rejilla.</p> 
+        <h4>Tracks:</h4>
+        <p>Un track es lo que nosotros llamaríamos una columna o una fila. Una columna completa o fila completa. Por tanto un track horizontal irá de izquierda a derecha, ocupando una única fila completa y un track vertical de arriba a abajo, ocupando una única columna completa.
+
+            <br> Los tracks están separados por dos líneas consecutivas. Sería lo que entendemos por una columna o una fila.
+            
+              Son importantes porque nos ayudará a entender que CSS Grid no es una tabla de toda la vida (tablas de HTML),
+             es algo inmensamente más flexible.
+             <br> De hecho, es incluso incorrecto denominar tracks horizontales y tracks verticales,
+              porque con una configuración de la rejilla lo que eran tracks horizontales pueden pasar a ser verticales y viceversa.
+             Por lo que podemos denominarlos simplemente tracks, tanto sean horizontales como verticales.</p>
+
+        <h4>Celda:</h4>     
+        <p>En CSS Grid una celda no tiene ninguna connotación especial con respecto a lo que ya podemos conocer. Es simplemente eso, un espacio definido entre dos líneas horizontales consecutivas y dos líneas verticales consecutivas.
+            En la intersección de todas estas líneas se acota una celda. Como puedes entender, una celda tiene el tamaño de 1x1 en nuestra rejilla.
+        </p>
+        <h4>Área: </h4>
+        <p>Es una porción de nuestra rejilla que comprende más de una celda. Si hemos dicho que una celda es de 1 x 1, un área puede ser un conjunto de celdas de 2 x 1, 2 x 2, etc.
+            <br>Las áreas son siempre cuadradas o rectangulares y se componen por celdas que están consecutivas, ya sea en la horizontal, vertical o ambas. No puedo hacer un área en forma de "L", tiene que ser rectangular (o cuadrado).
+        </p> <br>
+        <h3 id= paginaweb > <li>Mockup del sitio Web: </li> </h3>
+     <img src="recursos/MI PAGINA  WEB.JPG" alt="Mockup">
+     <p id= direccionurl><b>URL Mockup:</b> <a target="_blank" href="https://balsamiq.cloud/s44hs6o/ppaa0tn/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D">https://balsamiq.cloud/s44hs6o/ppaa0tn/r2278?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D</a> </p> 
+</article>
+<br>
+<hr size="2px" color="black"/>
+        <footer>
+            <h5 id=datos>Acerca del  Autor <br>
+                 <b>Correo:</b>  lesalamancac@unadvirtual.edu.co <br>
+                <b>Skype:</b> lesc.009 <br>
+                <b>Fecha de actualización:</b>  11 de Marzo de 2021 <br></h5>
+        </footer>
+</body>
+</html>
