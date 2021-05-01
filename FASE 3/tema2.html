@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 / Luis Salamanca</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link rel="icon" href="img/LS.ico">
+</head>
+
+<body>
+    <!-- Sección del encabezado -->
+    <header>
+        <img src="img/logo-universidad-nacional-abierta-y-a-distancia.png" alt="Imagen de logo" height="100" width="150">
+        <h1>FLEX BOX Y  CSS GRID</h1>
+        <img src="img/logo-universidad-nacional-abierta-y-a-distancia.png" alt="Imagen de logo" height="100" width="150">
+    </header>
+
+    <!-- Barra de menú horizontal -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown">
+                    <li><a href="tema1.html">Flexbox</a></li>
+                    <li><a href="tema2.html">Css Grid</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown">
+                    <li><a href="recurso1.html">Audio1</a></li>
+                    <li><a href="recurso2.html">Audio2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Aprendizaje</a>
+                <ul class="dropdown">
+                    <li><a href="#">prueba1</a></li>
+                    <li><a href="#">prueba2</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seccion central -->
+
+    <div class="contenedor">
+        <aside>
+            <h4>Fan page</h4>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+        <section>
+            <!-- aquí debo cambiar en cada página con los contenidos -->
+            
+            <article>
+                
+                <div align="center"><img src="img/css 2.jpg" alt="cssportada" height="500" width="550"></div><br>
+                
+                <p>CSS Grid Layout (también conocido como " <b>Grid</b>"), es un sistema de diseño bidimensional basado en cuadrículas que tiene como objetivo nada menos que cambiar completamente la forma en que diseñamos interfaces de usuario basadas en cuadrículas.
+                   CSS siempre se ha utilizado para diseñar nuestras páginas web, pero nunca se ha hecho un buen trabajo. 
+                   Primero, usamos tablas, luego flotantes, posicionamiento y bloque en línea, pero todos estos métodos fueron esencialmente trucos y dejaron fuera una gran cantidad de funciones importantes (centrado vertical, por ejemplo). 
+                   Flexbox ayudó, pero está diseñado para diseños unidimensionales más simples, no complejos bidimensionales (Flexbox y Grid funcionan muy bien juntos). Grid es el primer módulo CSS creado específicamente para resolver 
+                   los problemas de diseño que todos hemos estado pirateando durante el tiempo que llevamos creando sitios web.</p>
+                <p>Para comenzar, debe definir un elemento contenedor como una cuadrícula con display: grid, establecer los tamaños de columna y fila con grid-template-columnsy grid-template-rows, y luego colocar sus elementos secundarios en la cuadrícula con 
+                    grid-columny grid-row. De manera similar a flexbox, el orden de origen de los elementos de la cuadrícula no importa. Su CSS puede colocarlos en cualquier orden, lo que hace que sea muy fácil reorganizar su cuadrícula con consultas de medios.
+                     Imagínese definir el diseño de toda su página y luego reorganizarlo por completo para adaptarse a un ancho de pantalla diferente,
+                     todo con solo un par de líneas de CSS. Grid es uno de los módulos CSS más poderosos jamás introducido.</p>
+                <p>Algunos  conceptos  importantes  para tener en cuenta  son:</p>
+                <h4>Lineas:</h4>
+                <p>Son las divisiones que permiten acotar las celdas.
+                     Tenemos tanto líneas horizontales que dividen las filas como líneas verticales que dividen las columnas.
+   
+                  <br>   En una rejilla, todas las líneas están numeradas o mejor dicho, tienen un número que comienza en la línea más exterior de la rejilla.
+                   Obviamente la primera línea será la 1 y aumentarán de izquierda a derecha y de arriba a abajo. 
+                   <br>
+                  Las líneas son muy importantes, porque serán las que nos permitan definir la posición de los contenidos (elementos del HTML) dentro de la rejilla.</p> 
+           <h4>Tracks:</h4>
+           <p>Un track es lo que nosotros llamaríamos una columna o una fila. Una columna completa o fila completa. Por tanto un track horizontal irá de izquierda a derecha, ocupando una única fila completa y un track vertical de arriba a abajo, ocupando una única columna completa.
+   
+               <br> Los tracks están separados por dos líneas consecutivas. Sería lo que entendemos por una columna o una fila.
+               
+                 Son importantes porque nos ayudará a entender que CSS Grid no es una tabla de toda la vida (tablas de HTML),
+                es algo inmensamente más flexible.
+                <br> De hecho, es incluso incorrecto denominar tracks horizontales y tracks verticales,
+                 porque con una configuración de la rejilla lo que eran tracks horizontales pueden pasar a ser verticales y viceversa.
+                Por lo que podemos denominarlos simplemente tracks, tanto sean horizontales como verticales.</p>
+   
+           <h4>Celda:</h4>     
+           <p>En CSS Grid una celda no tiene ninguna connotación especial con respecto a lo que ya podemos conocer. Es simplemente eso, un espacio definido entre dos líneas horizontales consecutivas y dos líneas verticales consecutivas.
+               En la intersección de todas estas líneas se acota una celda. Como puedes entender, una celda tiene el tamaño de 1x1 en nuestra rejilla.
+           </p>
+           <h4>Área: </h4>
+           <p>Es una porción de nuestra rejilla que comprende más de una celda. Si hemos dicho que una celda es de 1 x 1, un área puede ser un conjunto de celdas de 2 x 1, 2 x 2, etc.
+               <br>Las áreas son siempre cuadradas o rectangulares y se componen por celdas que están consecutivas, ya sea en la horizontal, vertical o ambas. No puedo hacer un área en forma de "L", tiene que ser rectangular (o cuadrado).
+           </p> 
+           <img src="img/css grid 1.jpg" alt="cssgrilla" height="500" width="550">
+           <h6>Aceves, D. (06 de 02 de 2020). Qué es CSS Grid Layout. Obtenido de desarrolloweb.com: https://desarrolloweb.com/articulos/que-es-css-grid-layout.html</h6>   <br>
+            </article>
+        </section>
+        
+    </div>
+    <!-- Pie de página -->
+    <footer>
+       <p> © Copyleft miOrganización.org | fecha de actualización: <br>
+           Diseño, código HTML5 y programación hecho a mano por nosotros usando herramientas de Software Libre.
+           
+       </p>
+
+
+    </footer>
+</body>
+
+</html>

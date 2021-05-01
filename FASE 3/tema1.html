@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 / Luis Salamanca</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link rel="icon" href="img/LS.ico">
+</head>
+
+<body>
+    <!-- Sección del encabezado -->
+    <header>
+        <img src="img/logo-universidad-nacional-abierta-y-a-distancia.png" alt="Imagen de logo" height="100" width="150">
+        <h1>FLEX BOX Y  CSS GRID</h1>
+        <img src="img/logo-universidad-nacional-abierta-y-a-distancia.png" alt="Imagen de logo" height="100" width="150">
+    </header>
+
+    <!-- Barra de navegación horizontal -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown">
+                    <li><a href="tema1.html">Flexbox</a></li>
+                    <li><a href="tema2.html">Css Grid</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown">
+                    <li><a href="recurso1.html">Audio1</a></li>
+                    <li><a href="recurso2.html">Audio2</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Aprendizaje</a>
+                <ul class="dropdown">
+                    <li><a href="#">prueba1</a></li>
+                    <li><a href="#">prueba2</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seccion central -->
+
+    <div class="contenedor">
+        <aside>
+            <h4>Fan page</h4>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+        <section>
+            <article class="justificado">
+                <article>
+                    
+
+                        <div align="center"><img src="img/flex box 1.png"alt= "flexbox" height="500" width="750"> <br> <br></div>
+
+                        El Flexbox Layout (Caja flexible) tiene como objetivo proporcionar una forma más eficiente de diseñar, alinear y distribuir el espacio entre los elementos de un contenedor, 
+                        incluso cuando su tamaño es desconocido y / o dinámico 
+                        (por lo tanto, el palabra "flex"). <br> <br>
+                        La idea principal detrás del diseño flexible es darle al contenedor la capacidad de alterar el ancho / alto (y el orden) de sus elementos para llenar mejor el espacio disponible 
+                        (principalmente para adaptarse a todo tipo de dispositivos de visualización y tamaños de pantalla). 
+                         Un contenedor flexible expande los artículos para llenar el espacio libre disponible o los encoge para evitar que se desborden. <br> <br>
+                         Dado que flexbox es un módulo completo y no una sola propiedad, involucra muchas cosas, incluido todo su conjunto de propiedades. 
+                         Algunos de ellos están destinados a establecerse en el contenedor (elemento padre, conocido como "contenedor flexible") mientras que otros están destinados a establecerse en los 
+                         elementos secundarios (dichos "elementos flexibles"). <br><br>
+
+
+                    </p>
+                    <h3> Los dos ejes de flexbox:</h3>
+                    <p>
+                        Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes: 
+                         <b>el eje principal y el eje cruzado.  </b>  
+                        </p>
+                        <p>El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes,
+                            por lo que vale la pena entender cómo trabajan desde el principio. <br>
+                        </p>
+                        
+                        <h4>Eje principal: </h4>
+                        <p>El eje principal está definido por flex-direction, que posee cuatro posibles valores </p>
+                        
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                        <p>Si elegimos <b>row</b> o <b>row-reverse</b>, el eje principal correrá a lo largo de la fila según la dirección de la línea.</p>
+                        <p>Al elegir <b>column</b> o <b>column-reverse</b> el eje principal correrá desde el borde superior de la página hasta el final según la dirección del bloque.</p>
+                
+                        <h4>Eje cruzado: </h4>
+                        <p>Va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal)
+                             es row o row-reverse el eje cruzado irá por las columnas.
+                             Si el eje principal es column o column-reverse entonces el eje cruzado corre a lo largo de las filas.</p> <br>
+                             <img src="img/eje cruzado.jpg"alt= "ejecruzado" height="300" width="450"> <br>
+                             <br>
+                             <h6>mozilla. (12 de 03 de 2021). Conceptos Básicos de flexbox. Obtenido de mdn web docs: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</h6>
+                          
+            </article>
+            
+        </section>
+
+    </div>
+    <!-- Pie de página -->
+    <footer>
+        <p> © Copyleft miOrganización.org | fecha de actualización: <br>
+            Diseño, código HTML5 y programación hecho a mano por nosotros usando herramientas de Software Libre.
+
+        </p>
+
+
+    </footer>
+</body>
+
+</html>
